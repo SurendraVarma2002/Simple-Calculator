@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#calcContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(46, 44, 44);
+    border-radius: 10px;
+}
+input{
+    width: 90%;
+    font-size: 3rem;
+    height: 4rem;
+    border-radius: 10px;
+    border: 1px solid rgb(151, 151, 151);
+}
+#buttonsContainer{
+    display: grid;
+    width: 90%;
+    grid-template-columns: [first] 25% [line2] 25% [line3] 25% auto;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    row-gap: 20px;
+    text-align: center;
+}
+#buttonsContainer button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(91, 91, 91);
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    width: 100%;
+    height: 3rem;
+}
+#buttonsContainer button:hover{
+    transition: 0.4s;
+    font-size: 1.6rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(91, 91, 91);
+}
